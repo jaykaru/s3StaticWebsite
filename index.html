@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay's Portfolio</title>
+    
+</head>
+<style>
+    
+    /* Navigation Bar */
+.navbar {
+    background-color: #333;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-links li a:hover {
+    background-color: #555; /* Hover animation for navigation links */
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #f0f0f0;
+    padding: 100px 20px;
+    text-align: center;
+    /* Animation example: Fade in the hero section */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Projects Section */
+.project-card:hover {
+    transform: translateY(-5px); /* Hover animation for project cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn {
+    transition: background-color 0.3s ease; /* Hover animation for buttons */
+}
+
+.btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* Adjust layout for smaller screens */
+    .project-grid {
+        flex-direction: column;
+    }
+}
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#home" class="logo">Jay's Portfolio</a>
+                <ul class="nav-links">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Hi, I'm Jay!</h1>
+                <p>A passionate web developer showcasing my work.</p>
+                <a href="#projects" class="btn">View My Projects</a>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="project-grid">
+                    <!-- Project Cards with Images, Titles, Descriptions, and Links -->
+                    <div class="project-card">
+                        <img src="project1.jpg" alt="Project 1">
+                        <h3>Project Title 1</h3>
+                        <p>Brief description of Project 1.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                    <!-- ... More Project Cards ... -->
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews-section">
+            <div class="container">
+                <h2>What People Say</h2>
+                <div class="review-carousel">
+                    <!-- Review Cards with Text, Author, and Rating -->
+                    <div class="review-card">
+                        <p>"Jay is a fantastic developer, highly recommended!"</p>
+                        <h4>Client Name</h4>
+                    </div>
+                    <!-- ... More Review Cards ... -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Detailed biography of Jay, skills, and experience.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form>
+                    <!-- Form Fields for Name, Email, Subject, Message -->
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Jay's Portfolio. All rights reserved.</p>
+            <!-- Social media links -->
+        </div>
+    </footer>
+</body>
+</html>
