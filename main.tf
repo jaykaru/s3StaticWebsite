@@ -1,6 +1,5 @@
 resource "aws_s3_bucket" "mybucket" {
   bucket = var.bucketName
-
 }
 
 resource "aws_s3_bucket_ownership_controls" "mybucket_ownership_controls" {
@@ -36,7 +35,6 @@ resource "aws_s3_object" "index" {
   source = "index.html"
   acl   = "public-read"
   content_type = "text/html"
-  
 }
 resource "aws_s3_object" "error" {
   bucket = aws_s3_bucket.mybucket.id
